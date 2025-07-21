@@ -12,6 +12,14 @@
       
       
       
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> shared mem </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -105,9 +113,9 @@
       
         <tags>
             
-            <tag> leakless </tag>
-            
             <tag> bof </tag>
+            
+            <tag> leakless </tag>
             
             <tag> ret2dlresolve </tag>
             
@@ -151,9 +159,9 @@
       
         <tags>
             
-            <tag> leakless </tag>
-            
             <tag> heap overflow </tag>
+            
+            <tag> leakless </tag>
             
             <tag> fmt </tag>
             
@@ -226,9 +234,9 @@
       
         <tags>
             
-            <tag> bof </tag>
-            
             <tag> cgi </tag>
+            
+            <tag> bof </tag>
             
             <tag> 命令注入 </tag>
             
